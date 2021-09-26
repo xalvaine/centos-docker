@@ -4,4 +4,8 @@ services:
   centos:
     image: centos
     volumes:
-    - ./enventory.sh:/home/enventory.sh
+      - ./enventory.sh:/home/enventory.sh
+    devices:
+      - /dev/mem:/dev/mem
+    cap_add:
+      - sys_rawio
