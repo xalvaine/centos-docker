@@ -8,4 +8,4 @@ services:
     devices:
       - /dev/mem:/dev/mem
     cap_add:
-      - sys_rawio
+      - ALL
