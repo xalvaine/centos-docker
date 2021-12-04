@@ -6,7 +6,9 @@ services:
       context: .
     volumes:
       - ./enventory.sh:/home/enventory.sh
-      - - ./enventory.sh:/home/script-lab-4.sh
+      - ./script-lab-4.sh:/home/script-lab-4.sh
+      - ./screen.png:/home/screen.png
+      - ./script-lab-5.sh:/home/script-lab-5.sh
     devices:
       - /dev/mem:/dev/mem
     cap_add:
